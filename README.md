@@ -11,7 +11,7 @@
 viewport.init('URL страницы, которую подтягиваем через iframe');
 ```
 4\. Подключите **client.js** в подтягиваемую страницу (назовем **iframe.html**)
-<br/>5\. Инициализируйте viewoprt в **iframe.html**:
+<br/>5\. Инициализируйте родительское окно в **iframe.html**:
 ```javascript
 iframeParent.init('URL родительского окна');
 ```
