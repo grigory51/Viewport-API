@@ -1,1 +1,20 @@
-!function(){window.viewport={init:function(e){window.addEventListener?window.addEventListener("message",this.handleMessage.bind(this)):window.attachEvent("onmessage",this.handleMessage.bind(this)),document.getElementById("iframe").src=e+location.search},handleMessage:function(e){if(e.origin===location.protocol+"//"+location.host){var t=e.data;t=JSON.parse(t),document.getElementById("iframe").style.width=t.width+"px",document.getElementById("iframe").style.height=t.height+"px"}}}}();
+(function () {
+    window.viewport = {
+        init: function (url) {
+            if (window.addEventListener) {
+                window.addEventListener('message', this.handleMessage.bind(this));
+            } else {
+                window.attachEvent('onmessage', this.handleMessage.bind(this));
+            }
+            document.getElementById('iframe').src = url + location.search;
+        },
+        handleMessage: function (event) {
+            if (event.origin === location.protocol + '//' + location.host) {
+                var config = event.data;
+                config = JSON.parse(config);
+                document.getElementById('iframe').style.width = config.width + 'px';
+                document.getElementById('iframe').style.height = config.height + 'px';
+            }
+        }
+    }
+}());
