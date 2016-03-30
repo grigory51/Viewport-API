@@ -1,17 +1,17 @@
 # Viewport_API
-Inserting a page via iframe with correct dimensions
+Вставка страницы через iframe с автоматическим определением размеров
 
-1\. Plug **index_initer.js** to your **index.html**
-<br/>2\. Add iframe tag with empty src attribute and id="iframe":
+1\. Полкочите **dispathcer.js** в **index.html**
+<br/>2\. Добавьте тег iframe c пустым аттрибутом src и id="iframe":
 ```html
 <iframe id="iframe" frameborder="0"></iframe>
 ```
-3\. Init viewoprt in **index.html**:
+3\. Инициализируйте viewport в **index.html**:
 ```javascript
-viewport.init('URL of project that you will upload via iframe');
+viewport.init('URL страницы, которую подтягиваем через iframe');
 ```
-4\. Plug **iframe_initer.js** to html-file with project that you will upload via iframe (e.g. **iframe.html**)
-<br/>5\. Init viewoprt in **iframe.html**:
+4\. Подключите **client.js** в подтягиваемую страницу (назовем **iframe.html**)
+<br/>5\. Инициализируйте viewoprt в **iframe.html**:
 ```javascript
-iframeParent.init('URL of parent frame');
+iframeParent.init('URL родительского окна');
 ```
