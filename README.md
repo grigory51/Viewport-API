@@ -6,3 +6,7 @@ Inserting a page via iframe with correct dimensions
 ```html
 <iframe id="iframe" frameborder="0"></iframe>
 ```
+3. Init viewoprt:
+```javascript
+viewport.init('URL');
+```
