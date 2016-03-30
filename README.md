@@ -1,7 +1,7 @@
 # Viewport_API
 Вставка страницы через iframe с автоматическим определением размеров
 
-1\. Полкочите **dispathcer.js** в **index.html**
+1\. Подключите **dispathcer.js** в **index.html**
 <br/>2\. Добавьте тег iframe c пустым аттрибутом src и id="iframe":
 ```html
 <iframe id="iframe" frameborder="0"></iframe>
