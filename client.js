@@ -8,7 +8,7 @@
         heigth: Math.max(
                 body.scrollHeight, body.offsetHeight,
                 html.clientHeight, html.scrollHeight, html.offsetHeight)
-    }
+    };
     var config = JSON.stringify(iframe);
     window.iframeParent = {
         init: function (url) {
